@@ -17,6 +17,8 @@ def move(board, position, char = "X")
 end
 
 def valid_move?(board_position)
+  if board[position] == <0 || board[position]>8
+    return false
   def position_taken?(board, position)
     if board[position] == " " || board[position]== "" || board[position] == nil
     return false
