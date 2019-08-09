@@ -26,7 +26,9 @@ end
   
 def valid_move?(board, position)
   if position.between?(0, 8)
-    return true  
+    return true
+  if position == "X" || position == "O"
+    return false
   else 
     return false
   end 
