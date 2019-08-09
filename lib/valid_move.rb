@@ -16,11 +16,12 @@ def move(board, position, char = "X")
   board[position] = char
 end
 
-
-def position_taken?(board, position)
-  if board[position] == " " || board[position]== "" || board[position] == nil
+def valid_move?(board_position)
+  def position_taken?(board, position)
+    if board[position] == " " || board[position]== "" || board[position] == nil
     return false
   else return true
-end
+  end
+  end
 end
 
