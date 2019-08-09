@@ -16,7 +16,7 @@ def move(board, position, char = "X")
   board[position] = char
 end
 
-def valid_move?(board_position)
+def valid_move?(board, position)
   if board[position] <1 || board[position] >9
     return false  
   else 
