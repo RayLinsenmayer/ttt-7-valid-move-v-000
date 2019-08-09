@@ -19,11 +19,11 @@ end
 def valid_move?(board_position)
   if board[position] <1 || board[position]>9
     return false
+  end
   def position_taken?(board, position)
     if board[position] == " " || board[position]== "" || board[position] == nil
     return false
   else return true
-  end
   end
 end
 
